@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: #000;
+  margin: 0;
+  
+}
+
+.text-gradiant {
+  background: linear-gradient(90deg, #FFFFFF 0%, #FFBF00 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contract-border {
+  border-top: 1px solid;
+  border-image-source: linear-gradient(93.58deg, #000000 0%, #F28F00 12.9%, #F28F00 87.77%, #000000 100%);
+  border-image-slice: 1;
+  border-image-width: 1px;
+  border-image-repeat: stretch;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+
+  .hero-h {
+      min-height: 85vh;
+      padding: 10px;
+  }
+
+  .width {
+    width: 100px;
+  }
+  .height {
+    height: 80px;
+  }
+  .padd {
+    padding: 10px;
+  }
+  
+}
+
+@keyframes pulse-scale {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+}
+
+@keyframes glow-ring {
+  0% {
+    transform: scale(1);
+    opacity: 0.6;
+    box-shadow: 0 0 10px rgba(0, 174, 255, 0.8),
+                0 0 20px rgba(0, 174, 255, 0.5);
+  }
+  50% {
+    transform: scale(1.3);
+    opacity: 0.3;
+    box-shadow: 0 0 25px rgba(0, 174, 255, 0.9),
+                0 0 40px rgba(0, 174, 255, 0.6);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.6;
+    box-shadow: 0 0 10px rgba(0, 174, 255, 0.8),
+                0 0 20px rgba(0, 174, 255, 0.5);
+  }
+}
+
+.telegram-btn {
+  animation: pulse-scale 2s infinite ease-in-out;
+}
+
+.telegram-glow {
+  animation: glow-ring 2s infinite ease-in-out;
+}
+
+
+
+
+
