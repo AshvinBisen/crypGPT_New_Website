@@ -87,6 +87,15 @@ const HeroSection = () => {
           className="mt-8 flex flex-wrap justify-center gap-4"
         >
 
+         <a
+            href="https://crypgpts-token.gitbook.io/crypgpts-token/" 
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-6 py-3 text-[20px] rounded-lg border border-[#CD900380] bg-gradient-to-r from-[#FFA200] via-[#FFFFFF] to-[#FFA200] text-[black] shadow-[inset_0px_0px_35px_0px_#FFB2004D] font-semibold hover:bg-[linear-gradient(90deg,#FFA200_20px,#FFFFFF_50.48%,#FFA200_80%)]  transition inline-block text-center"
+          >
+            Whitepaper
+          </a>
+
         <a
             href="https://t.me/crypgpttoken" 
             target="_blank"
@@ -105,12 +114,7 @@ const HeroSection = () => {
             <img src={solid} alt="SolidProof" className="max-w-[121px]" />
           </a>
 
-          {/* <button className="px-6 py-3 rounded-lg border border-[#FFB20017] shadow-[inset_0px_0px_5px_0px_#FFB2004D] font-semibold hover:bg-yellow-500 hover:text-black transition">
-            Join Community
-          </button>
-          <button className="px-6 py-3 rounded-lg border border-[#FFB20017] shadow-[inset_0px_0px_5px_0px_#FFB2004D] font-semibold hover:bg-yellow-500 transition">
-            <img src={solid} alt="" className="max-w-[121px]" />
-          </button> */}
+         
         </motion.div>
       </div>
     </section>

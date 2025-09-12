@@ -29,15 +29,41 @@ import img16 from "../../assets/partners/partners/22.png";
 import img17 from "../../assets/partners/partners/23.png";
 import img18 from "../../assets/partners/partners/24.png";
 
-const partners = [coingecko, phantom, solscan, trustwallet, Coinmarketcap, rydium, img1, img2, img3 ,img4, img5, img6, img7, img8, img9, img10, img11, img12, img13, img14, img15, img16, img17, img18];
+// Ab array me objects banaye with logo + url
+const partners = [
+  { logo: coingecko },
+  { logo: phantom },
+  { logo: solscan },
+  { logo: trustwallet },
+  { logo: Coinmarketcap },
+  { logo: rydium, url: "https://poocoin.app/tokens/0xc643f4dd66a10955e53e3f67a81ba54703d3b7fb" },
+  { logo: img1 },
+  { logo: img2, url: "https://pancakeswap.finance/swap?inputCurrency=0x55d398326f99059fF775485246999027B3197955&outputCurrency=0xC643F4Dd66a10955e53E3f67A81Ba54703d3B7FB" },
+  { logo: img3 },
+  { logo: img4},
+  { logo: img5 },
+  { logo: img6 },
+  { logo: img7 },
+  { logo: img8},
+  { logo: img9},
+  { logo: img10 },
+  { logo: img11 },
+  { logo: img12 },
+  { logo: img13 },
+  { logo: img14 },
+  { logo: img15, url: "https://dex.coinmarketcap.com/token/bsc/0xc643f4dd66a10955e53e3f67a81ba54703d3b7fb/" },
+  { logo: img16 },
+  { logo: img17 },
+  { logo: img18 },
+];
 
-const partnersSection = () => {
+const PartnersSection = () => {
   return (
-    <section id="partners" className="bg-black text-white  py-10 ">
+    <section id="partners" className="bg-black text-white py-10">
       {/* Title */}
-      <div  className="text-center mb-16">
+      <div className="text-center mb-16">
         <span className="bg-transparent border border-white/25 text-white px-5 py-2 rounded-full font-[400] text-[20px] 
-        leading-[110%] text-center cursor-pointer transition duration-300 max-w-fit mx-auto  font-['Open_Sans',sans-serif]">
+        leading-[110%] text-center cursor-pointer transition duration-300 max-w-fit mx-auto font-['Open_Sans',sans-serif]">
           Strategic Partner&apos;s
         </span>
       </div>
@@ -47,10 +73,10 @@ const partnersSection = () => {
         <Swiper
           modules={[Autoplay]}
           autoplay={{
-            delay: 0, // no delay between slides
+            delay: 0,
             disableOnInteraction: false,
           }}
-          speed={3000} 
+          speed={3000}
           loop={true}
           spaceBetween={40}
           breakpoints={{
@@ -59,9 +85,14 @@ const partnersSection = () => {
             1024: { slidesPerView: 5 },
           }}
         >
-          {partners.map((logo, index) => (
+          {partners.map((partner, index) => (
             <SwiperSlide key={index}>
-              <div className="relative flex items-center justify-center p-4">
+              <a
+                href={partner.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="relative flex items-center justify-center p-4"
+              >
                 {/* Top-left corner */}
                 <span className="absolute top-0 left-0 w-8 h-[1px] bg-gradient-to-r from-yellow-500 to-transparent"></span>
                 <span className="absolute top-0 left-0 h-8 w-[1px] bg-gradient-to-b from-yellow-500 to-transparent"></span>
@@ -72,11 +103,11 @@ const partnersSection = () => {
 
                 {/* Logo */}
                 <img
-                  src={logo}
-                  alt="partner"
+                  src={partner.logo}
+                  alt={`partner-${index}`}
                   className="max-w-[1890px] object-contain mx-4"
                 />
-              </div>
+              </a>
             </SwiperSlide>
           ))}
         </Swiper>
@@ -85,4 +116,4 @@ const partnersSection = () => {
   );
 };
 
-export default partnersSection;
+export default PartnersSection;

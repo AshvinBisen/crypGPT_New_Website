@@ -71,6 +71,7 @@ const Footer = () => {
             <h4>Utility Pages</h4>
             <ul>
               <li><Link to="https://crypgpts-token.gitbook.io/crypgpts-token/" target="blank">Whitepaper</Link></li>
+               <li><Link to="https://pancakeswap.finance/swap?inputCurrency=0x55d398326f99059fF775485246999027B3197955&outputCurrency=0xC643F4Dd66a10955e53E3f67A81Ba54703d3B7FB" target="blank">Buy Token</Link></li>
               <li><a href="/privacy-policy">Privacy Policy</a></li>
               <li><a href="/terms-and-conditions">Terms & Conditions</a></li>
               <li><Link to="/?=faq">FAQ's</Link></li>

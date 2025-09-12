@@ -29,7 +29,7 @@ function Navbar() {
              <li><Link to="/?=faq">FAQ's</Link></li> 
            </ul>
          </nav>
-         <button className="buy-token-btn" > <Link to="https://crypgpts-token.gitbook.io/crypgpts-token/" target="_blank" style={{textDecoration:"none" , color:"#000"}}>Whitepaper</Link> </button>
+         <button className="buy-token-btn" > <Link to="https://pancakeswap.finance/swap?inputCurrency=0x55d398326f99059fF775485246999027B3197955&outputCurrency=0xC643F4Dd66a10955e53E3f67A81Ba54703d3B7FB" target="_blank" style={{textDecoration:"none" , color:"#000"}}>Buy Now</Link> </button>
          <div className="mobile-menu-toggle" onClick={toggleMobileMenu}>
            <span className="hamburger-icon"></span>
          </div>
