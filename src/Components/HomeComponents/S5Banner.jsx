@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 // import tokenImg1 from "../../assets/banner/banner 1.png"; 
-import tokenImg2 from "../../assets/banner/banner 2.png";
-import tokenImg3 from "../../assets/banner/banner 3.png";
+import tokenImg2 from "../../assets/banner/1.png";
+import tokenImg3 from "../../assets/banner/2.png";
 
 const slides = [
   // { id: 1, image: tokenImg1 },
