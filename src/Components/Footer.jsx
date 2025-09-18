@@ -81,7 +81,7 @@ const Footer = () => {
             <h4>Contact us</h4>
             <p>We're committed to driving your business success with our experienced team.</p>
             <p>Address: 82 New Street, NY 10013</p>
-            <p>Phone: +971551872679</p>
+            {/* <p>Phone: +971551872679</p> */}
           </div>
         {/* </div> */}
       </div>
