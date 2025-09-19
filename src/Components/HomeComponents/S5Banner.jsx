@@ -5,9 +5,9 @@ import tokenImg2 from "../../assets/banner/1.png";
 import tokenImg3 from "../../assets/banner/2.png";
 
 const slides = [
-  // { id: 1, image: tokenImg1 },
-  { id: 2, image: tokenImg2 },
-  { id: 3, image: tokenImg3 },
+  // { id: 1, image: tokenImg1, link: "https://example1.com" },
+  { id: 2, image: tokenImg2, link: "https://coinmarketcap.com/currencies/crypgpt-token/" },
+  { id: 3, image: tokenImg3, link: "https://pancakeswap.finance/swap?inputCurrency=0x55d398326f99059fF775485246999027B3197955&outputCurrency=0xC643F4Dd66a10955e53E3f67A81Ba54703d3B7FB" },
 ];
 
 const BannerSlider = () => {
@@ -46,24 +46,10 @@ const BannerSlider = () => {
 
       {/* Slider Container */}
       <div className="relative w-[90%] md:w-[70%] flex items-center justify-center  py-5 m-8 ">
-        {/* Left Glow Border */}
-        <div className="absolute top-0 left-[-5px] md:left-[-5px]">
-          <div className="inline-flex relative">
-            <div className="relative inline-block z-[4] w-[11px] h-[11px] border-[1px] border-[#FFA200] bg-white rotate-45 max-md:w-[10px] max-md:h-[10px] max-md:border-2"></div>
-            <div className="absolute z-[4] h-px sm:w-[70px] md:w-[210px] w-[210px] bg-[linear-gradient(4.38deg,#FFA200,#050505)] top-1/2 left-1/2 -translate-y-1/2 xl:w-[250px] 2xl:w-[290px]"></div>
-            <div className="absolute z-[4] w-px sm:h-[70px] h-[210px] md:h-[210px] mt-[7px] inset-0 left-1/2 -translate-x-1/2 bg-gradient-to-b from-[#FFA200] to-[#050505] sm:h-[70px] xl:h-[100px] 2xl:h-[125px]"></div>
-          </div>
-        </div>
-        <div className="absolute bottom-0 right-[-5px] max-md:right-[-5px]">
-          <div className="inline-flex relative">
-            <div className="relative inline-block z-[4] w-[11px] h-[11px] border-[3px] border-[#FFA200] bg-white rotate-45 max-md:w-[10px] max-md:h-[10px] max-md:border-2"></div>
-            <div className="absolute z-[4] h-px bg-[linear-gradient(4.38deg,#050505,#FFA200)] right-0 top-1/2 -translate-y-1/2 mr-[7px] sm:w-[70px] md:w-[210px] w-[210px] xl:w-[250px] 2xl:w-[290px]"></div>
-            <div className="absolute bottom-0 left-1/2 translate-x-[-50%] z-[4] w-px md:h-[210px] h-[210px] sm:mb-[7px] bg-[linear-gradient(4.38deg,#FFA200,#050505)] sm:h-[70px] xl:h-[250px] 2xl:h-[290px]"></div>
-          </div>
-        </div>
 
         {/* Slide Container with Prev, Current, and Next */}
         <div className="relative w-full h-full flex justify-center items-center py-6 px-6 gap-8 overflow-hidden">
+          
           {/* Previous Slide */}
           <AnimatePresence initial={false} custom={direction}>
             <motion.img
@@ -79,47 +65,27 @@ const BannerSlider = () => {
             />
           </AnimatePresence>
 
-
-
-
           {/* Current Slide */}
-          {/* <AnimatePresence initial={false} custom={direction}>
+          <AnimatePresence initial={false} custom={direction}>
             <motion.img
               key={slides[current].id}
               src={slides[current].image}
               alt="banner"
-              className="rounded-lg border border-[#FFF] shadow-[0_0_20px_rgba(255,140,0,0.5)] max-h-[400px] object-contain w-[70%] z-10"
+              onClick={() => {
+                if (slides[current].link) {
+                  window.open(slides[current].link, "_blank");
+                }
+              }}
+              className={`rounded-lg border border-[#FFF] shadow-[0_0_20px_rgba(255,140,0,0.5)] max-h-[400px] object-contain w-[70%] z-10 ${
+                slides[current].link ? "cursor-pointer" : ""
+              }`}
               custom={direction}
               initial={{ x: direction > 0 ? 300 : -300, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               exit={{ x: direction > 0 ? -300 : 300, opacity: 0 }}
               transition={{ duration: 0.8, ease: "easeInOut" }}
             />
-          </AnimatePresence> */}
-
-
-          {/* Current Slide */}
-<AnimatePresence initial={false} custom={direction}>
-  <motion.img
-    key={slides[current].id}
-    src={slides[current].image}
-    alt="banner"
-    onClick={() => {
-      if (slides[current].id === 3) {
-        window.open("https://t.me/CrypGpt_airdrop_bot", "_blank");
-      }
-    }}
-    className={`rounded-lg border border-[#FFF] shadow-[0_0_20px_rgba(255,140,0,0.5)] max-h-[400px] object-contain w-[70%] z-10 ${
-      slides[current].id === 3 ? "cursor-pointer" : ""
-    }`}
-    custom={direction}
-    initial={{ x: direction > 0 ? 300 : -300, opacity: 0 }}
-    animate={{ x: 0, opacity: 1 }}
-    exit={{ x: direction > 0 ? -300 : 300, opacity: 0 }}
-    transition={{ duration: 0.8, ease: "easeInOut" }}
-  />
-</AnimatePresence>
-
+          </AnimatePresence>
 
           {/* Next Slide */}
           <AnimatePresence initial={false} custom={direction}>
