@@ -22,6 +22,7 @@ const roadmapData = [
       "Launch of AI Trading Signal Assistant",
       "Telegram AI Bot Integration",
       "Strategic Partnerships",
+      "Listing On Tier 2 Exchange",
     ],
   },
   {
@@ -31,6 +32,7 @@ const roadmapData = [
       "AI Portfolio Management Tool",
       "Multi-language Chatbot Beta",
       "Global Community Expansion",
+      "Listing On Tier 1 Exchange",
     ],
   },
   {
@@ -55,7 +57,7 @@ const roadmapData = [
     quarter: "Q4",
     points: [
       "Full Ecosystem Expansion",
-      "Top Exchange Listings (Tier 1 CEX)",
+      "Top Exchange Listings",
       "1M+ Users in the CrypGPT Ecosystem",
     ],
   },

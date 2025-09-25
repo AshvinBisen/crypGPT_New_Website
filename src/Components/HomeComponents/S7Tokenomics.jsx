@@ -48,21 +48,14 @@ const Tokenomics = () => {
             <div className="text-white font-Open_Sans font-normal text-[20px] leading-[120%] text-center">Network</div>
             <div className="font-Open_Sans font-normal text-[24px] leading-[120%] text-center align-middle 
    transition-all duration-300 ease-in-out max-w-[365px] 
-   bg-gradient-to-r from-[#FFBF00] from-30% to-white bg-clip-text text-transparent"> Solana</div>
+   bg-gradient-to-r from-[#FFBF00] from-30% to-white bg-clip-text text-transparent"> Solana, BEP-20</div>
           </div>
           <div className="token-card">
             <div className="text-white font-Open_Sans font-normal text-[20px] leading-[120%] text-center">Decimal</div>
             <div className="font-Open_Sans font-normal text-[24px] leading-[120%] text-center align-middle 
    transition-all duration-300 ease-in-out max-w-[365px] 
-   bg-gradient-to-r from-[#FFBF00] from-30% to-white bg-clip-text text-transparent"> 9</div>
+   bg-gradient-to-r from-[#FFBF00] from-30% to-white bg-clip-text text-transparent"> 9, 18</div>
           </div>
-
-
-{/* 
-          <div className="token-card"><span>Symbol</span> CGPT</div>
-          <div className="token-card"><span>Supply</span> 1 Billion</div>
-          <div className="token-card"><span>Network</span> Solana</div>
-          <div className="token-card"><span>Decimal</span> 9</div> */}
         </div>
 
         {/* Right Side (Image) */}

@@ -70,8 +70,8 @@ const Footer = () => {
           <div className="footer-column two">
             <h4>Utility Pages</h4>
             <ul>
-              <li><Link to="https://crypgpts-token.gitbook.io/crypgpts-token/" target="blank">Whitepaper</Link></li>
-               <li><Link to="https://pancakeswap.finance/swap?inputCurrency=0x55d398326f99059fF775485246999027B3197955&outputCurrency=0xC643F4Dd66a10955e53E3f67A81Ba54703d3B7FB" target="blank">Buy Token</Link></li>
+              <li><Link to="https://crypgpts-token.gitbook.io/crypgpts-token/" target="blank" rel="noopener noreferrer">Whitepaper</Link></li>
+               <li><Link to="https://pancakeswap.finance/swap?inputCurrency=0x55d398326f99059fF775485246999027B3197955&outputCurrency=0xC643F4Dd66a10955e53E3f67A81Ba54703d3B7FB" target="blank" rel="noopener noreferrer">Buy Token</Link></li>
               <li><a href="/privacy-policy">Privacy Policy</a></li>
               <li><a href="/terms-and-conditions">Terms & Conditions</a></li>
               <li><Link to="/?=faq">FAQ's</Link></li>
@@ -80,7 +80,7 @@ const Footer = () => {
           <div className="footer-column three">
             <h4>Contact us</h4>
             <p>We're committed to driving your business success with our experienced team.</p>
-            <p>Address: 82 New Street, NY 10013</p>
+            <p>Address: North Bridge Rd City Hall Raffles City Shopping Centre, Singapore 179103</p>
             {/* <p>Phone: +971551872679</p> */}
           </div>
         {/* </div> */}
@@ -104,12 +104,12 @@ const Footer = () => {
         <div className="footer-social">
           <span>Follow us on social platform's</span>
           <div className="social-icons">
-            <a href="http://facebook.com/crygpttoken" target="_blank"><img src={facebookIcon} alt="Facebook" /></a>
-            <a href="https://www.youtube.com/@crypgpt_token" target="_blank"><img src={youtueIcon} alt="YouTube" /></a>
-            <a href="https://x.com/crypgpt_token" target="_blank"><img src={twitterIcon} alt="Twitter" /></a>
-            <a href="https://www.instagram.com/crypgpt_token" target="_blank"><img src={instagramIcon} alt="Instagram" /></a>
-            {/* <a href="https://t.me/crypgpttoken" target="_blank"><img src={telegramIcon} alt="Telegram" /></a> */}
-            <a href="https://medium.com/@crypgpt_token" target="_blank"><img src={mediumIcon} alt="medium" /></a>
+            <a href="http://facebook.com/crygpttoken" target="_blank" rel="noopener noreferrer"><img src={facebookIcon} alt="Facebook" /></a>
+            <a href="https://www.youtube.com/@crypgpt_token" target="_blank" rel="noopener noreferrer"><img src={youtueIcon} alt="YouTube" /></a>
+            <a href="https://x.com/crypgpt_token" target="_blank" rel="noopener noreferrer"><img src={twitterIcon} alt="Twitter" /></a>
+            <a href="https://www.instagram.com/crypgpt_token" target="_blank" rel="noopener noreferrer"><img src={instagramIcon} alt="Instagram" /></a>
+            {/* <a href="https://t.me/crypgpttoken" target="_blank" rel="noopener noreferrer"><img src={telegramIcon} alt="Telegram" /></a> */}
+            <a href="https://medium.com/@crypgpt_token" target="_blank" rel="noopener noreferrer"><img src={mediumIcon} alt="medium" /></a>
           </div>
         </div>
       </div>

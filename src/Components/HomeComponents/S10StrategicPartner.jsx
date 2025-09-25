@@ -29,10 +29,9 @@ import img16 from "../../assets/partners/partners/22.png";
 import img17 from "../../assets/partners/partners/23.png";
 import img18 from "../../assets/partners/partners/24.png";
 
-// Ab array me objects banaye with logo + url
 const partners = [
   { logo: coingecko },
-  { logo: phantom },
+  { logo: phantom, url: "https://thebittimes.com/" },
   { logo: solscan },
   { logo: trustwallet },
   { logo: Coinmarketcap },
@@ -117,3 +116,5 @@ const PartnersSection = () => {
 };
 
 export default PartnersSection;
+
+
