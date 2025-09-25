@@ -8,8 +8,8 @@ const roadmapData = [
     year: "2025",
     quarter: "Q3",
     points: [
-      "Token Launch, Website & Whitepaper Release, Community Building",
-      "Website & Whitepaper Release",
+      "Token Launch, Website & Whitepaper Release",
+      "Community Building",
       "SolidProof Audit Completed",
       "Token Launch on Blofien Exchange",
       "Listings on CMC, CG, Coin360, CoinBubble",
