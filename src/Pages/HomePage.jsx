@@ -43,8 +43,8 @@ function HomePage() {
       <S2HeroImage />
       <S3Aboutus />
       <S4Usecase2 />
-      <S6Roadmap />
        <S5Banner />
+      <S6Roadmap />
       <S7Tokenomics />
       <S8WhyChooseUS />
       <S9Solution />
