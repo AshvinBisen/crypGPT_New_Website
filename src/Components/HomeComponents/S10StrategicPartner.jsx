@@ -63,7 +63,7 @@ const PartnersSection = () => {
       <div className="text-center mb-16">
         <span className="bg-transparent border border-white/25 text-white px-5 py-2 rounded-full font-[400] text-[20px] 
         leading-[110%] text-center cursor-pointer transition duration-300 max-w-fit mx-auto font-['Open_Sans',sans-serif]">
-          Strategic Partner&apos;s
+          Listing Partner&apos;s
         </span>
       </div>
 
